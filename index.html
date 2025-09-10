@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="scoreSide">
+            <p class="title">Home</p>
+            <p class="score">Score:</p>
+            <span id="homeScore"></span>
+            <br>
+            <button id="home1">+1</button>
+            <button id="home2">+2</button>
+            <button id="home3">+3</button>
+        </div>
+        <div class="scoreSide">
+            <p class="title">Away</p>
+            <p class="score">Score:</p>
+            <span id="awayScore"></span>
+            <br>
+            <button id="away1">+1</button>
+            <button id="away2">+2</button>
+            <button id="away3">+3</button>
+        </div>
+        <div class="save">
+            <button id="saveBtn">Save</button>
+        </div>
+        <div>
+           <p id="result">Final Score: </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
