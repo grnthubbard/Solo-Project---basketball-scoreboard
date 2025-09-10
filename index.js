@@ -73,7 +73,7 @@ function addThreePointsAway() {
 
 
 function save() {
-    result.innerText += " Home: " + homeScore + " Away: " + awayScore
+    result.innerText += "Final Score: Home: " + homeScore + " Away: " + awayScore
 }
 
 function reset() {
