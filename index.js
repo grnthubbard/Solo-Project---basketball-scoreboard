@@ -41,6 +41,9 @@ away3.addEventListener("click", function() {
 saveBtn.addEventListener("click", function() {
     save();
 });
+resetBtn.addEventListener("click", function() {
+    reset();
+});
 
 function addOnePointHome() {
     homeScore +=1;
@@ -70,5 +73,13 @@ function addThreePointsAway() {
 
 
 function save() {
-    result.innerText += "Home: " + homeScore + "Away: " + awayScore
+    result.innerText += " Home: " + homeScore + " Away: " + awayScore
+}
+
+function reset() {
+    result.innerText = ""
+    homeScore = 0;
+    awayScore = 0;
+    homeEl.innerText = homeScore;
+    awayEl.innerText = awayScore;
 }
